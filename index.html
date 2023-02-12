@@ -68,7 +68,7 @@ body {
  
 /* 图像部分 */
 .fakeimg {
-  background-color: #aaa;
+ 
   width: 100%;
   padding: 20px;
 }
@@ -82,7 +82,7 @@ body {
  
 /* 列后面清除浮动 */
 .row:after {
-  content: "";
+  content: "(" attr(href) ")";
   display: table;
   clear: both;
 }
@@ -110,50 +110,59 @@ body {
     width: 100%;
   }
 }
- #y{height: 200px;
-	background-color: rgb(0, 255, 98); /* 浏览器不支持时显示 */
-    background-image: linear-gradient(#7ec6bc, ##ebe717);
- }
-</style>
+img {
+    max-width: 100%;
+    height: auto;
+}
 </style>
 </head>
 <body>
 <div class="header">
   <h1>欢迎来到我的网页</h1>
   <p>一定要好好学习,养成终身自学的好习惯</p>
+ 
+
 </div>
 
 <div class="topnav">
-  <a href="#">主页</a>
+  <a href="#">主页</a><a href="https://www.runoob.com/" target="_blank">访问菜鸟教程!</a>
   <a href="#">关于</a>
   <a href="#">联系</a>
   <a href="#" style="float:right">高中</a>
   <a href="#" style="float:right">初中</a>
 </div>
+</p>
 
-<div class="row" class="y">
+<div class="row" >
   <div class="leftcolumn">
     <div class="card">
       <h2>学习OK</h2>
       <h5>2019 年 4 月 17日</h5>
-      <div class="fakeimg" style="height:200px;"> <img src= alt=""> 图片</div>
-      <p>一些文本...</p>
-      <p>更是梦想！</p>
+      <div class="fakeimg" style="height:200px;"> <img src= "http://www.runoob.com/images/logo.png"> </div>
+      <p><a href="https://www.runoob.com">菜鸟教程</a> - 免费的编程学习网站。</p>
+      <p><a href="https://www.runoob.com">Google</a> - 好用的搜索引擎。</p>
     </div>
     <div class="card">
-      <h2>文章标题</h2>
-      <h5>2019 年 4 月 17日</h5>
-      <div class="fakeimg" style="height:200px;">图片</div>
-      <p>一些文本...</p>
-      <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+      <h2>Which is more efficient, getting up early or staying up late in senior three?</h2>
+      <h5>2023年 2月 13日</h5>
+      <div class="fakeimg" style="height:200px;"><img src="http://www.runoob.com/wp-content/uploads/2016/04/trolltunga.jpg" alt="Norway" width="600" height="130"></div>
+      <p>
+        The advantages of going to bed early and getting up early are that you can concentrate every day, have a good mental state, and have a high efficiency in the morning. Early risers have a clearer mind, plan ahead and act more boldly. It is more effective for preparing for the exam.
+        Studying late at night leads to lack of sleep, which seriously affects daytime study. It is difficult to concentrate and the learning efficiency is low. And staying up late is not good for your health. In the long run, it will endanger your health, and your grades may fall instead of rising.
+        The college entrance examination is not only a fight for knowledge, but also a fight for perseverance and physical strength. Ensuring adequate sleep is an indispensable condition for senior three students to reserve their physical fitness. Senior three students should maintain good work and rest habits and ensure adequate sleep. Studying late at night is not suitable for most students, and good study habits are the guarantee to improve efficiency.
+        High-efficient learning method in senior three
+        In the study of senior three, we should pay attention to reviewing and sorting out the notes of various subjects. There should be a clear plan for the review of senior three, and more time should be spent in the review process for the subjects that are weak in themselves, which can also effectively make up for the shortcomings of weak subjects and improve the overall performance.
+        It is also very important to arrange the notes in senior three. We should take notes in all subjects, especially in some key knowledge we have learned, which is very helpful for us to improve the efficiency in review.
+        In the process of studying in senior three, we should arrange the study time reasonably, and don't always stay up late to study. The study efficiency at night is very low, because after you have studied for one day, if you want to continue studying at night, your study efficiency will be very low the next day. If you stay up late at night, your study efficiency will be very low, so we try our best to concentrate all our homework in the daytime, set a reasonable time for ourselves to go to bed at night, and then wait until the next day to continue studying.</p>
     </div>
   </div>
   <div class="rightcolumn">
     <div class="card">
       <h2>关于我</h2>
-      <div class="fakeimg" style="height:100px;">图片</div>
+      <div class="fakeimg" style="height:100px;"><img src =me.jpg ;></div>
+      <p>河源市东埔中学</p>
       <p>哔哩哔哩大学</p>
-      <p>上海黑马校区</p>
+      <p2>---上海黑马校区</p2>
     </div>
     <div class="card">
       <h3>热门文章</h3>
