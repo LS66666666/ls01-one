@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name ='viewport'content ='width=device-width,initial-scale=1.0'>
 <title>dongpuzhongxue.com</title>
     <style>
         img {
@@ -21,13 +22,11 @@
 }
     ul {
         list-style-type: none;
-        margin: auto;
         padding: 0;
         width: 200px;
         background-color: #f1f1f1;
-        border: 1px solid #555;
+        ;
     }
-    
     li a {
         display: block;
         color: #000;
@@ -57,24 +56,54 @@
     a:link {color:#000000;}      /* 未访问链接*/
     a:visited {color:#00FF00;}  /* 已访问链接 */
     a:hover {color:#FF00FF;}  /* 鼠标移动到链接上 */
-    a:active { background-image: linear-gradient(#e66465, #9198e5;}  /*这是个注释*/
-     h2{
-        margin: auto;
+     #pl{
+        max-width: 700px;
+        margin: 30px auto;
+        padding: 15px;
+        line-height: 1.7;
     }
 </style>
 </head>
 <body>
+    <pl>
     <div id="grad1"></div>
+<p class =  #grad1  >欢迎来到东埔中学</p>
 
-<h2 class="title">欢迎来到东埔中学</h2>
-<p class="titles">今天也要努力学习鸭</p>
-<ul >
-    <li><a class="active" href=".">主页</a></li>
-    <li><a href="#news">新闻</a></li>
-    <li><a href="#contact">联系</a></li>
-    <li><a href="#about">关于</a></li>
-  </ul>
+  <div class="nav">
+    <ul >
+        <li><a class="active" href=".">主页</a></li>
+        <li><a href="#news">新闻</a></li>
+        <li><a href="#contact">联系</a></li>
+        <li><a href="#about">关于</a></li>
+      </ul>
+      <div class="c"></div>
+      <div class="nav">
+          <div class="main">
+              <div class="title">登录管理后台</div>
+              <div class="inp inp1">
+                  <input type="text" placeholder="用户名">
+              </div>
+              <div class="inp inp2">
+                  <input type="password" placeholder="密码">
+              </div>
+              <div class="tips">
+                  <a>注册账号</a>
+                  <a>忘记密码</a>
+              </div>
+              <div class="submit">立即登录</div>
+          </div>
+          <div class="cop">
+              
+          </div>
+      </div>
+      <script>
+        document.querySelector(".c").style.left = "-30%";
+        document.querySelector(".c").style.top = "-70%";
+        document.querySelector(".main").style.opacity = "1";
+        document.querySelector(".main").style.background = "rgba(255,255,255,.9)";
+    </script>
   <img src="http://www.runoob.com/wp-content/uploads/2016/04/trolltunga.jpg" alt="Norway" width="1000" height="300">
-
+<div>今天也要努力学习鸭</div>
+</pl>
  </html>
   
