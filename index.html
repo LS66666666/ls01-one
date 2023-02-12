@@ -2,108 +2,175 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name ='viewport'content ='width=device-width,initial-scale=1.0'>
-<title>dongpuzhongxue.com</title>
-    <style>
-        img {
-    max-width: 100%;
-    height: auto;
+<title>我的网站(czt.com)</title>
+<style>
+* {
+  box-sizing: border-box;
 }
-        #grad1 {
-    height: 200px;
-	background-color: red; /* 浏览器不支持时显示 */
-    background-image: linear-gradient(#e66465, #9198e5);
+ 
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-color:rgb(47, 0, 255);
+  background-image: linear-gradient( #004680, #4484ba);
 }
-     body{
-    margin: auto;
-    width: 50%;
-    border: 3px solid rgb(45, 0, 128);
-    padding: 10px;
+ 
+/* 头部标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  height: 200px;
+	background-color: rgb(47, 0, 255); /* 浏览器不支持时显示 */
+    background-image: linear-gradient(#7ec6bc, #ebe717);
 }
-    ul {
-        list-style-type: none;
-        padding: 0;
-        width: 200px;
-        background-color: #f1f1f1;
-        ;
-    }
-    li a {
-        display: block;
-        color: #000;
-        padding: 8px 16px;
-        text-decoration: none;
-    }
-    
-    li {
-        text-align: center;
-        border-bottom: 1px solid #555;
-    }
-    
-    li:last-child {
-        border-bottom: none;
-    }
-    
-    li a.active {
-        background-color: #59cde9;
 
-        color: #0a2a88;
-    }
-    
-    li a:hover:not(.active) {
-        background-color: #555;
-        color: rgb(255, 255, 255);
-    }
-    a:link {color:#000000;}      /* 未访问链接*/
-    a:visited {color:#00FF00;}  /* 已访问链接 */
-    a:hover {color:#FF00FF;}  /* 鼠标移动到链接上 */
-     #pl{
-        max-width: 700px;
-        margin: 30px auto;
-        padding: 15px;
-        line-height: 1.7;
-    }
+ 
+.header h1 {
+  font-size: 50px;
+}
+ 
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+ 
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ 
+/* 链接颜色修改 */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+ 
+/* 创建两列 */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+ 
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+ 
+/* 图像部分 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+ 
+/* 文章卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+ 
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* 底部 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+ 
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+ 
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+ #y{height: 200px;
+	background-color: rgb(0, 255, 98); /* 浏览器不支持时显示 */
+    background-image: linear-gradient(#7ec6bc, ##ebe717);
+ }
+</style>
 </style>
 </head>
 <body>
-    <pl>
-    <div id="grad1"></div>
-<p class =  #grad1  >欢迎来到东埔中学</p>
+<div class="header">
+  <h1>欢迎来到我的网页</h1>
+  <p>一定要好好学习,养成终身自学的好习惯</p>
+</div>
 
-  <div class="nav">
-    <ul >
-        <li><a class="active" href=".">主页</a></li>
-        <li><a href="#news">新闻</a></li>
-        <li><a href="#contact">联系</a></li>
-        <li><a href="#about">关于</a></li>
-      </ul>
-      <div class="c"></div>
-      <div class="nav">
-          <div class="main">
-              <div class="title">登录管理后台</div>
-              <div class="inp inp1">
-                  <input type="text" placeholder="用户名">
-              </div>
-              <div class="inp inp2">
-                  <input type="password" placeholder="密码">
-              </div>
-              <div class="tips">
-                  <a>注册账号</a>
-                  <a>忘记密码</a>
-              </div>
-              <div class="submit">立即登录</div>
-          </div>
-          <div class="cop">
-              
-          </div>
-      </div>
-      <script>
-        document.querySelector(".c").style.left = "-30%";
-        document.querySelector(".c").style.top = "-70%";
-        document.querySelector(".main").style.opacity = "1";
-        document.querySelector(".main").style.background = "rgba(255,255,255,.9)";
-    </script>
-  <img src="http://www.runoob.com/wp-content/uploads/2016/04/trolltunga.jpg" alt="Norway" width="1000" height="300">
-<div>今天也要努力学习鸭</div>
-</pl>
- </html>
-  
+<div class="topnav">
+  <a href="#">主页</a>
+  <a href="#">关于</a>
+  <a href="#">联系</a>
+  <a href="#" style="float:right">高中</a>
+  <a href="#" style="float:right">初中</a>
+</div>
+
+<div class="row" class="y">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>学习OK</h2>
+      <h5>2019 年 4 月 17日</h5>
+      <div class="fakeimg" style="height:200px;"> <img src= alt=""> 图片</div>
+      <p>一些文本...</p>
+      <p>更是梦想！</p>
+    </div>
+    <div class="card">
+      <h2>文章标题</h2>
+      <h5>2019 年 4 月 17日</h5>
+      <div class="fakeimg" style="height:200px;">图片</div>
+      <p>一些文本...</p>
+      <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>关于我</h2>
+      <div class="fakeimg" style="height:100px;">图片</div>
+      <p>哔哩哔哩大学</p>
+      <p>上海黑马校区</p>
+    </div>
+    <div class="card">
+      <h3>热门文章</h3>
+      <div class="fakeimg"><p>图片</p></div>
+      <div class="fakeimg"><p>图片</p></div>
+      <div class="fakeimg"><p>图片</p></div>
+    </div>
+    <div class="card">
+      <h3>关注我</h3>
+      <p>交个朋友</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>底部区域</h2>
+</div>
+
+</body>
+</html>
